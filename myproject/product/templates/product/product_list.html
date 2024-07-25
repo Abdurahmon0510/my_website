@@ -4,11 +4,13 @@
     <title>Product List</title>
 </head>
 <body>
-    <h1>Product List</h1>
-    <ul>
+    <h1 style="color: blueviolet;">Product List</h1>
+    <ul style="font-size: 25px;">
         {% for product in products %}
         <li>
-            <a href="{% url 'product-detail' product.id %}">{{ product.name }}</a>
+            
+            <a href="{% url 'product-detail' product.id %}">{{ product.name }}</a> <hr>
+           
         </li>
         {% endfor %}
     </ul>
